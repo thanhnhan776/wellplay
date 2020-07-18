@@ -1,7 +1,8 @@
 {
   "name": "wellplay",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

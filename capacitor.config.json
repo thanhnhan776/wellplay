@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "wellplay",
+  "appId": "com.wellplay",
+  "appName": "Wellplay",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
