@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "resources": "cordova-res android && node scripts/resources.js"
+    "resources": "cordova-res android && node scripts/resources.js",
+    "copy": "ionic cap copy"
   },
   "private": true,
   "dependencies": {
