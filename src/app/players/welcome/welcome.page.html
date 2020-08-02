@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-no-border">
+      <ion-icon name="menu-outline"></ion-icon>
+    </ion-title>
+    <ion-avatar slot="end" class="ion-padding">
+      <img [src]="user.avatar">
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title color="primary">
+    Hey {{ user.getFullName() }},
+  </ion-title>
+  <ion-text>
+    <h5 class="ion-padding-horizontal">
+      What do you want to play?
+    </h5>
+  </ion-text>
+  <ion-searchbar class="search" placeholder="Search for everything"></ion-searchbar>
+
+  <ion-item lines="none">
+    <ion-label slot="start">
+      <strong>Sport</strong>
+    </ion-label>
+    <ion-text slot="end" color="primary">
+      <a href="" [routerLink]="['tabs']">See all</a>
+    </ion-text>
+  </ion-item>
+</ion-content>

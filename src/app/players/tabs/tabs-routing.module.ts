@@ -4,28 +4,28 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
         path: 'home',
-        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+        loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
       },
       {
         path: 'locker-room',
-        loadChildren: () => import('../locker-room/locker-room.module').then(m => m.LockerRoomPageModule)
+        loadChildren: () => import('./locker-room/locker-room.module').then(m => m.LockerRoomPageModule)
       },
       {
         path: 'news',
-        loadChildren: () => import('../news/news.module').then(m => m.NewsPageModule)
+        loadChildren: () => import('./news/news.module').then(m => m.NewsPageModule)
       },
       {
         path: 'setting',
-        loadChildren: () => import('../setting/setting.module').then(m => m.SettingPageModule)
+        loadChildren: () => import('./setting/setting.module').then(m => m.SettingPageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/home',
+        redirectTo: 'home',
         pathMatch: 'full'
       }
     ]
