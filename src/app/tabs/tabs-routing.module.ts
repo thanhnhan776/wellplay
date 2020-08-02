@@ -12,16 +12,16 @@ const routes: Routes = [
         loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'locker-room',
+        loadChildren: () => import('../locker-room/locker-room.module').then(m => m.LockerRoomPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'news',
+        loadChildren: () => import('../news/news.module').then(m => m.NewsPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'setting',
+        loadChildren: () => import('../setting/setting.module').then(m => m.SettingPageModule)
       },
       {
         path: '',
@@ -41,4 +41,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }
